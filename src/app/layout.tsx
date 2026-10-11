@@ -16,6 +16,31 @@ export const metadata: Metadata = {
   description:
     "Lantern Software Engineering PLC designs, builds, and maintains mission-critical systems for fintech, healthcare, government, and enterprise teams across Ethiopia and beyond.",
   metadataBase: new URL("https://lantern.et"),
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://lantern.et",
+    siteName: "Lantern Software Engineering",
+    title: "Lantern Software Engineering PLC — Software that ships",
+    description:
+      "Mission-critical systems for fintech, healthcare, government, and enterprise teams across Ethiopia and beyond.",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lantern Software Engineering",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lantern Software Engineering PLC — Software that ships",
+    description:
+      "Mission-critical systems for fintech, healthcare, government, and enterprise teams.",
+    images: ["/twitter-image.png"],
+  },
 };
 
 export default function RootLayout({
